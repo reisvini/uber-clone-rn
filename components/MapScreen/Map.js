@@ -7,7 +7,7 @@ import { selectOrigin } from '../../slices/navSlice';
 
 export default function Map() {
   const origin = useSelector(selectOrigin);
-  console.log(origin)
+  // console.log(origin)
 
   return (
     <MapView
