@@ -3,10 +3,9 @@ import tw from 'tailwind-react-native-classnames';
 import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 import NavOptions from '../components/HomeScreen/NavOptions';
 import SearchPlaces from '../components/HomeScreen/SearchPlaces';
+import NavFavourites from '../components/HomeScreen/NavFavourites';
 
 export default function HomeScreen() {
-
-
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
@@ -24,6 +23,7 @@ export default function HomeScreen() {
         <SearchPlaces />
 
         <NavOptions />
+        <NavFavourites ctx='origin' />
       </View>
     </SafeAreaView>
   );
