@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/core';
 import React from 'react';
 import {
   FlatList,
@@ -41,8 +42,7 @@ const data = [
 
 export default function NavFavourites({ ctx }) {
   const dispatch = useDispatch();
-  const origin = useSelector(selectOrigin);
-  const destination = useSelector(selectDestination);
+  const navigation = useNavigation();
 
   return (
     <FlatList
@@ -70,6 +70,8 @@ export default function NavFavourites({ ctx }) {
                   description: destination,
                 })
               );
+
+              navigation.navigate('RideOptionCard')
             }
           }}
         >
