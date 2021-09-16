@@ -2,8 +2,11 @@ import React from 'react';
 import tw from 'tailwind-react-native-classnames';
 import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 import NavOptions from '../components/HomeScreen/NavOptions';
+import SearchPlaces from '../components/HomeScreen/SearchPlaces';
 
 export default function HomeScreen() {
+
+
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
@@ -17,6 +20,8 @@ export default function HomeScreen() {
             uri: 'https://links.papareact.com/gzs',
           }}
         />
+
+        <SearchPlaces />
 
         <NavOptions />
       </View>
